@@ -104,7 +104,9 @@ form {
 }
 
 button {
-  margin-top: 1dvh;
+  margin: 1dvh 0;
+  font-weight: bold;
+  -webkit-text-stroke: .01dvh white;
 }
 
 main {
@@ -119,15 +121,18 @@ main {
 #routes > * > h2 {
   -webkit-text-stroke: .1dvh blue;
   -webkit-text-fill-color: yellow;
+  font-size: 3.5dvh;
 }
 
 #routes > div, main {
-  background: white;
+  background: #fffd;
   -webkit-text-stroke: .1dvh black;
   /* text-shadow: 0 0 .5dvh black; */
-  border: 1dvh ridge black;
+  border: 1dvh ridge #c23030;
+  outline: .4dvh solid black;
   border-radius: .5dvh;
   padding: 0  1dvw;
+  filter: drop-shadow(.5dvw .5dvh .8dvh black);
 }
 
 
@@ -146,4 +151,18 @@ main {
   display: flex;
   align-items: center;
   justify-items: center;
+}
+
+label {
+  color: black;
+}
+
+input {
+  color: white;
+  font-weight: bold;
+  padding: 1dvh;
+}
+
+dl {
+  color: black;
 }

@@ -38,6 +38,7 @@ const PokemonForm = (props) => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
+                    required
                 />
                 <label htmlFor="weight">Weight:</label>
                 <input
@@ -46,6 +47,7 @@ const PokemonForm = (props) => {
                     name="weight"
                     value={formData.weight}
                     onChange={handleChange}
+                    required
                 />
                 <label htmlFor="height">Height:</label>
                 <input
@@ -54,6 +56,7 @@ const PokemonForm = (props) => {
                     name="height"
                     value={formData.height}
                     onChange={handleChange}
+                    required
                 />
                 <button type="submit">Submit</button>
             </form>
