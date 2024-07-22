@@ -68,27 +68,46 @@ h1 {
   border-radius: .5dvh;
   padding: 0 1dvw;
   background: beige;
+  height: 12dvh;
+  aspect-ratio: 2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
   color: black;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
   color: white;
   -webkit-text-stroke: .1dvh black;
   -webkit-text-fill-color: red;
+  font-size: large;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-/* li:hover {
-  list-style-type: disc;
+/* li {
+  position: fixed;
+  margin: 0;
 } */
+
+li::marker {
+  color: red;
+}
+
+li:hover {
+  list-style-type: disc;
+  /* text-decoration: underline; */
+}
 
 #pokeList {
   display: flex;
@@ -96,6 +115,11 @@ ul {
   /* align-items: center; */
   /* padding-left: 11dvw;
   text-align: left; */
+  margin: 1dvh;
+}
+
+#pokeList > li {
+  margin: .1dvh;
 }
 
 form {
@@ -122,6 +146,7 @@ main {
   -webkit-text-stroke: .1dvh blue;
   -webkit-text-fill-color: yellow;
   font-size: 3.5dvh;
+  margin: 0;
 }
 
 #routes > div, main {
