@@ -16,7 +16,7 @@ const PokemonForm = (props) => {
     const [formData, setFormData] = useState(initialState);
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // necessary to prevent page reload
         // TODO : complete submit logic
         props.addPokemon(formData);
         setFormData(initialState);

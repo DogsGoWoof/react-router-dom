@@ -7,6 +7,8 @@ import PokemonList from './components/PokemonList';
 import PokemonDetails from './components/PokemonDetails';
 import PokemonForm from './components/PokemonForm';
 
+import './App.css';
+
 const initialState = [
   { _id: 1, name: 'bulbasaur', weight: 69, height: 7 },
   { _id: 2, name: 'ivysaur', weight: 130, height: 10 },
@@ -31,10 +33,24 @@ const App = () => {
     //   <PokemonList pokemon={pokemon} />
     // </>
     <>
-      <h1>Pokemon!</h1>
-      <NavBar />
+      <div id="h1-nav">
+        <h1>Pokemon!</h1>
+        <NavBar />
+      </div>
+      {/* 
       <Routes>
-        <Route path="/" element={<h2>Home Page</h2>} />
+        <Route 
+        path="< route directory ex.'/' >" 
+        element=< {< <Componenent> < props={props} (template: key=value) > />
+              // {...props}(spread shallow copy) is just an object passed in to the Component 
+                // shallow copies only separate the first level of key:value pairs in memory
+                  // deep copies (JSON.parse(JSON.stringify(object))) separate all levels of key:value pairs
+        />
+      </Routes>
+      */}
+      <div id="routes">
+      <Routes>
+        <Route path="/" element={<h2 id="home">Home Page</h2>} />
         <Route path="/pokemon" element={<PokemonList pokemon={pokemon} />} />
         <Route
           path="/pokemon/:pokemonId"
@@ -46,6 +62,7 @@ const App = () => {
         <Route path="*" element={<h2>Whoops, nothing here!</h2>} />
 
       </Routes>
+      </div>
     </>
   );
 };

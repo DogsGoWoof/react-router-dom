@@ -13,7 +13,7 @@ const PokemonDetails = (props) => {
     console.log('Pokemon Object:', singlePokemon)
 
     return (
-        <>
+        <div>
             <h2>{singlePokemon.name}</h2>
             <dl>
                 <dt>Weight:</dt>
@@ -21,7 +21,7 @@ const PokemonDetails = (props) => {
                 <dt>Height:</dt>
                 <dd>{singlePokemon.height}</dd>
             </dl>
-        </>
+        </div>
     );
 };
 
